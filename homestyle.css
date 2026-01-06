@@ -1,0 +1,235 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/be/d2/59/bed2591f723244f07bc4bf382f97103c.gif");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000c8;
+  background-blend-mode: darken;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 15px;
+  border: #fff solid 1px;
+  box-shadow: #b6b6b6 0px 0px 10px 0px;
+  margin : 10px 5px 0 5px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+    text-shadow: #ffffff , 0px 5px 8px 0px;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-shadow: #000000 , 0px 0px 5px;
+}
+
+.nav-links a:hover {
+  color: #0045b5;
+}
+
+/* Hamburger menu */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+}
+
+.uplogo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  margin-top: 5px;
+  height: 2cm;
+  width: 2cm;
+  background-size: cover;
+  background-image: url("/uploadlogo.png");
+  background-position: center;
+}
+
+h3 {
+    color: white;
+    text-shadow: 0 0 5px rgb(122, 122, 122);
+    margin-top: 2px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+#name {
+   color: #fff;
+   border: #fff solid 1px;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 5px;
+    padding: 5px;
+    width: 4.5cm;
+    outline: none;
+    font-weight: bold;
+}
+
+#imageInput {
+    color: #ffffff;
+    align-content: center;
+    text-align: center;
+    width: 4.5cm;
+    margin-top: 5px 5px 0 5px;
+    border: #fff solid 1px;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 5px;
+   column-rule-color: #000000;
+   margin-top: 5px;
+}
+#uploadBtn {
+   color: #fff;
+   align-content: center;
+   text-align: center;
+   width: 4.5cm;
+   padding: 5px;
+   margin-top: 5px 5px 0 5px;
+   border: none;
+   cursor: pointer;
+   border: #fff solid 1px;
+   background-color: rgba(27, 40, 158, 0.432);
+   border-radius: 5px;
+   margin-top: 10px;
+   font-weight: bold;
+   cursor: pointer;
+  transition: 
+        background-color 0.15s ease,
+        transform 0.1s ease;
+}
+
+.mainup{
+  border: #ffffff solid 1px;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 5cm;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: #b6b6b6 0px 0px 10px 0px;
+}
+
+/* Hover (optional but recommended) */
+#uploadBtn:hover {
+  background-color: #0212f7;
+}
+
+/* Click effect */
+#uploadBtn:active {
+  background-color: #a4bdfb;      /* Click color */
+  transform: scale(0.96);
+}
+
+
+
+/* gallery decoration  */
+/* gallery decoration  */
+/* gallery decoration  */
+
+
+#imageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.image-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #0000008f;
+  box-shadow: #7d7d7d 0px 0px 10px 0px;
+  margin: 0 10px 0 10px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto; /* 🔥 auto height */
+  border-radius: 5px;
+  box-shadow: #383838 0px 0px 10px 0px;
+}
+
+.image-box strong {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fbfafa;
+}
+
+.image-box small {
+  font-size: 12px;
+  color: #e0e0e0;
+  margin-top: 3px;
+}
+/* gallery decoration  */

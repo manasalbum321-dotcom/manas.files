@@ -1,0 +1,137 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-content: center;
+} 
+
+
+h1 {
+    color: hsl(0, 33%, 99%);
+    font-size: 60px;
+  text-shadow: 0 4px 8px rgba(254, 253, 253, 0.382);
+  outline: none; 
+  margin-bottom: 1.5cm;
+  font-family: 'Instagram Sans';
+}
+
+input {
+  padding: 8px 2px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(253, 253, 253, 0.1);
+  outline: none;
+  background: #0c0c0c81;
+  color: white;
+}
+button {
+  padding: 8px 2px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgba(118, 131, 227, 0.99);
+  color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+  outline: none;
+  
+}
+/* Background */
+
+.bg {
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/be/d2/59/bed2591f723244f07bc4bf382f97103c.gif");
+  background-size: cover;
+  background-position: center;
+  background: blur(95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Box */
+.login-box {
+  background: rgba(37, 37, 37, 0.679); /* transparent white */
+  padding: 15px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgb(252, 252, 252);
+  box-shadow: 0 2cm 4cm 6cm rgba(59, 59, 59, 0.688);
+}
+
+.login-box input {
+  width: 92%;
+  padding: 10px;
+}  
+
+
+.login-box button {
+  width: 100%;
+  padding: 8px;
+  background: #0212f77c;
+  color: white;
+  border-radius: 15px gray;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+} 
+p {
+  color: rgb(250, 250, 249);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.68);
+
+}
+
+
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 12px 32px;
+  background-color: #1552ee;      /* Normal */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 
+    background-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+/* Hover (optional but recommended) */
+.login-btn:hover {
+  background-color: #0212f7;
+}
+
+/* Click effect */
+.login-btn:active {
+  background-color: #a4bdfb;      /* Click color */
+  transform: scale(0.96);
+}
+
+.pincol {
+  color: #7a9ffc;
+  font-weight: bold;
+  text-decoration-line: none;
+  font-size: 18px;
+}
+
+.logo{
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background: #e8e8e900;
+  border: #fffefe solid 1px;
+  box-shadow: rgba(95, 95, 95, 0.837) 0 0 15px 2px;
+}
