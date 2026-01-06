@@ -64,7 +64,34 @@ uploadBtn.addEventListener("click", () => {
       time: new Date().toLocaleString()
 
     });
-    alert("Image successfully uploaded!");
+
+         // upload progress dikhao
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 3000);
+}
+
+// Example: fake progress then show popup
+let bar = document.getElementById("progress");
+let status = document.getElementById("status");
+
+let p = 0;
+status.innerText = "Uploading...";
+const interval = setInterval(() => {
+  if (p < 90) {
+    p++;
+    bar.value = p;
+  } else {
+    clearInterval(interval);
+    bar.value = 100;
+    status.innerText = "Upload Complete ✅";
+    showToast("Data saved successfully! ✅"); // <-- popup
+  }
+}, 50);
+// end upload progress dikhao
+    // alert("Image successfully uploaded!");
     
   };
 
