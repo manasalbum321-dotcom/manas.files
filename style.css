@@ -16,7 +16,8 @@ h1 {
 
 input {
   padding: 8px 2px;
-  font-size: 16px;
+  font-size: 18px;
+  height: 1cm;
   border-radius: 8px;
   border: 1px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.828);
@@ -27,6 +28,7 @@ input {
 button {
   padding: 8px 2px;
   font-size: 20px;
+  height: 1.5cm;
   border-radius: 15px;
   font-weight: bold;
   background-color: rgba(118, 131, 227, 0.99);
