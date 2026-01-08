@@ -58,7 +58,7 @@ button {
   border-radius: 20px;
   text-align: center;
   border: 1px solid rgb(252, 252, 252);
-  box-shadow: 0 2cm 4cm 6cm rgba(59, 59, 59, 0.688);
+  box-shadow: 0 2px 4px 2px rgba(59, 59, 59, 0.688);
 }
 
 .login-box input {
@@ -133,5 +133,5 @@ p {
   width: 18px;
   background: #e8e8e900;
   border: #fffefe solid 1px;
-  box-shadow: rgba(95, 95, 95, 0.837) 0 0 15px 2px;
+  box-shadow: rgb(56, 56, 56) 0 0 15px 2px;
 }
