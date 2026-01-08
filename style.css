@@ -1,0 +1,140 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-content: top;
+} 
+
+
+h1 {
+    color: hsl(0, 33%, 99%);
+    font-size: 80px;
+  text-shadow: 0 4px 8px rgb(0, 0, 0);
+  outline: none; 
+  margin-bottom: 1.5cm;
+}
+
+input {
+  padding: 8px 2px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.828);
+  outline: none;
+  background: #0c0c0c3c;
+  color: white;
+}
+button {
+  padding: 8px 2px;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: rgba(118, 131, 227, 0.99);
+  color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.698);
+  outline: none;
+  
+}
+/* Background */
+
+.bg {
+  height: 100vh;
+  /* background-image: url("https://i.pinimg.com/originals/9b/df/1d/9bdf1dd2ff5d5152e03549fccc608f45.gif"); */
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Box */
+.login-box {
+  background: rgba(0, 0, 0, 0.637); /* transparent white */
+  background-image: url("https://i.pinimg.com/originals/9b/df/1d/9bdf1dd2ff5d5152e03549fccc608f45.gif");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  padding: 15px;
+  width: 340px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgb(252, 252, 252);
+  box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.296);
+}
+
+.login-box input {
+  width: 92%;
+  padding: 10px;
+}  
+
+
+.login-box button {
+  width: 100%;
+  padding: 8px;
+  background: #0212f77c;
+  color: white;
+  border-radius: 15px gray;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+} 
+p {
+  color: rgb(250, 250, 249);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.68);
+
+}
+
+
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 12px 32px;
+  background-color: #1552ee;      /* Normal */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 
+    background-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+/* Hover (optional but recommended) */
+.login-btn:hover {
+  background-color: #0212f7;
+}
+
+/* Click effect */
+.login-btn:active {
+  background-color: #a4bdfb;      /* Click color */
+  transform: scale(0.96);
+}
+
+.pincol {
+  color: #5988ff;
+  font-weight: bold;
+  text-decoration-line: none;
+  font-size: 18px;
+}
+
+.logo{
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background: #ffffff;
+  border: #b0b0b0 solid 1px;
+  box-shadow: rgb(56, 56, 56) 0 0 15px 2px;
+}
