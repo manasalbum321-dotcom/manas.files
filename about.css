@@ -32,10 +32,11 @@ body {
     color: #ffffff;
     margin-bottom: 20px;
     text-shadow: white 0px 0px 10px 0px;
+    font-size: 50px
 }
 
 .about-container p {
-    font-size: 16px;
+    font-size: 32px;
     line-height: 1.8;
     color: #ffffff;
 }
